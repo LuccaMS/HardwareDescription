@@ -1,0 +1,26 @@
+|Ex2completo
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ex2completo|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ex2completo|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+

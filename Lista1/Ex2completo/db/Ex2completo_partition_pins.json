@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_S",
+					"strict" : false
+				},
+				{
+					"name" : "o_C",
+					"strict" : false
+				},
+				{
+					"name" : "i_A",
+					"strict" : false
+				},
+				{
+					"name" : "i_B",
+					"strict" : false
+				},
+				{
+					"name" : "i_C",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
