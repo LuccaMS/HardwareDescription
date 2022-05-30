@@ -93,6 +93,6 @@ BEGIN
 	WAIT FOR	20 NS;
 
 END PROCESS;
-END BEHAVIORAL;
+END behavioral;
 
 

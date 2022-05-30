@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ex3
-Tue May 17 10:11:16 2022
+Mon May 30 16:11:58 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -10,7 +10,14 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "Ex2completo:U00"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +44,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue May 17 10:11:16 2022           ;
+; Analysis & Synthesis Status        ; Successful - Mon May 30 16:11:58 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; ex3                                         ;
 ; Top-level Entity Name              ; ex3                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 15                                          ;
+;     Total combinational functions  ; 15                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 25                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -158,28 +165,159 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+; ../Ex2/ex2.vhd                   ; yes             ; User VHDL File  ; C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2/ex2.vhd                 ;         ;
+; ../Ex2completo/Ex2completo.vhd   ; yes             ; User VHDL File  ; C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd ;         ;
+; ex3.vhd                          ; yes             ; User VHDL File  ; C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex3/ex3.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 15             ;
+;                                             ;                ;
+; Total combinational functions               ; 15             ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 2              ;
+;     -- 3 input functions                    ; 12             ;
+;     -- <=2 input functions                  ; 1              ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 15             ;
+;     -- arithmetic mode                      ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 0              ;
+;     -- Dedicated logic registers            ; 0              ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 25             ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; reg_A[0]~input ;
+; Maximum fan-out                             ; 3              ;
+; Total fan-out                               ; 80             ;
+; Average fan-out                             ; 1.23           ;
++---------------------------------------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name          ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------+-------------+--------------+
+; |ex3                       ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 25   ; 0            ; 0          ; |ex3                         ; ex3         ; work         ;
+;    |Ex2completo:U00|       ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U00         ; Ex2completo ; work         ;
+;       |ex2:UO1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U00|ex2:UO1 ; ex2         ; work         ;
+;    |Ex2completo:U01|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U01         ; Ex2completo ; work         ;
+;       |ex2:UO2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U01|ex2:UO2 ; ex2         ; work         ;
+;    |Ex2completo:U02|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U02         ; Ex2completo ; work         ;
+;       |ex2:UO2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U02|ex2:UO2 ; ex2         ; work         ;
+;    |Ex2completo:U03|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U03         ; Ex2completo ; work         ;
+;       |ex2:UO2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U03|ex2:UO2 ; ex2         ; work         ;
+;    |Ex2completo:U04|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U04         ; Ex2completo ; work         ;
+;       |ex2:UO2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U04|ex2:UO2 ; ex2         ; work         ;
+;    |Ex2completo:U05|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U05         ; Ex2completo ; work         ;
+;       |ex2:UO2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U05|ex2:UO2 ; ex2         ; work         ;
+;    |Ex2completo:U06|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U06         ; Ex2completo ; work         ;
+;       |ex2:UO2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U06|ex2:UO2 ; ex2         ; work         ;
+;    |Ex2completo:U07|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U07         ; Ex2completo ; work         ;
+;       |ex2:UO2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ex3|Ex2completo:U07|ex2:UO2 ; ex2         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "Ex2completo:U00" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; i_c  ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 25                          ;
+; cycloneiii_lcell_comb ; 15                          ;
+;     normal            ; 15                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 4.77                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue May 17 10:11:08 2022
+    Info: Processing started: Mon May 30 16:11:50 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ex3 -c ex3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/saint/onedrive/documentos/descricao_de_hardaware/lista1/ex2/ex2.vhd
+    Info (12022): Found design unit 1: ex2-behavioral File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2/ex2.vhd Line: 16
+    Info (12023): Found entity 1: ex2 File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2/ex2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /users/saint/onedrive/documentos/descricao_de_hardaware/lista1/ex2completo/ex2completo.vhd
     Info (12022): Found design unit 1: Ex2completo-behavioral File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd Line: 18
     Info (12023): Found entity 1: Ex2completo File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ex3.vhd
     Info (12022): Found design unit 1: ex3-behavioral File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex3/ex3.vhd Line: 16
     Info (12023): Found entity 1: ex3 File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex3/ex3.vhd Line: 6
-Error (10346): VHDL error at ex3.vhd(31): formal port or parameter "i_C" must have actual or default value File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex3/ex3.vhd Line: 31
-Error (10784): HDL error at ex3.vhd(22): see declaration for object "i_C" File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex3/ex3.vhd Line: 22
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4792 megabytes
-    Error: Processing ended: Tue May 17 10:11:16 2022
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:19
+Info (12127): Elaborating entity "ex3" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "w_C[0]" at ex3.vhd(28) File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex3/ex3.vhd Line: 28
+Info (12128): Elaborating entity "Ex2completo" for hierarchy "Ex2completo:U00" File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex3/ex3.vhd Line: 32
+Info (12128): Elaborating entity "ex2" for hierarchy "Ex2completo:U00|ex2:UO1" File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd Line: 37
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 40 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Mon May 30 16:11:58 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 

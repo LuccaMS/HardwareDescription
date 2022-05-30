@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Failed - Tue May 17 10:11:16 2022
+Analysis & Synthesis Status : Successful - Mon May 30 16:11:58 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : ex3
 Top-level Entity Name : ex3
 Family : MAX 10
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
-UFM blocks : N/A until Partition Merge
-ADC blocks : N/A until Partition Merge
+Total logic elements : 15
+    Total combinational functions : 15
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

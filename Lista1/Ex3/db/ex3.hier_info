@@ -1,0 +1,236 @@
+|ex3
+reg_A[0] => Ex2completo:U00.i_A
+reg_A[1] => Ex2completo:U01.i_A
+reg_A[2] => Ex2completo:U02.i_A
+reg_A[3] => Ex2completo:U03.i_A
+reg_A[4] => Ex2completo:U04.i_A
+reg_A[5] => Ex2completo:U05.i_A
+reg_A[6] => Ex2completo:U06.i_A
+reg_A[7] => Ex2completo:U07.i_A
+reg_B[0] => Ex2completo:U00.i_B
+reg_B[1] => Ex2completo:U01.i_B
+reg_B[2] => Ex2completo:U02.i_B
+reg_B[3] => Ex2completo:U03.i_B
+reg_B[4] => Ex2completo:U04.i_B
+reg_B[5] => Ex2completo:U05.i_B
+reg_B[6] => Ex2completo:U06.i_B
+reg_B[7] => Ex2completo:U07.i_B
+o_S[0] << Ex2completo:U00.o_S
+o_S[1] << Ex2completo:U01.o_S
+o_S[2] << Ex2completo:U02.o_S
+o_S[3] << Ex2completo:U03.o_S
+o_S[4] << Ex2completo:U04.o_S
+o_S[5] << Ex2completo:U05.o_S
+o_S[6] << Ex2completo:U06.o_S
+o_S[7] << Ex2completo:U07.o_S
+o_C << Ex2completo:U07.o_C
+
+
+|ex3|Ex2completo:U00
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U00|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U00|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U01
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U01|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U01|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U02
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U02|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U02|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U03
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U03|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U03|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U04
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U04|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U04|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U05
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U05|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U05|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U06
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U06|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U06|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U07
+i_A => ex2:UO1.i_A
+i_B => ex2:UO1.i_B
+i_C => ex2:UO2.i_B
+o_S <= ex2:UO2.o_S
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U07|ex2:UO1
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex3|Ex2completo:U07|ex2:UO2
+i_A => o_S.IN0
+i_A => o_C.IN0
+i_B => o_S.IN1
+i_B => o_C.IN1
+o_S <= o_S.DB_MAX_OUTPUT_PORT_TYPE
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
