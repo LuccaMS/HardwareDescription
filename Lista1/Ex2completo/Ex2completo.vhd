@@ -24,7 +24,6 @@ architecture behavioral of Ex2completo is
 -----------------------------
 	component ex2 is 
 	Port(
-	
 		i_A	:	in	std_logic;
 		i_B	:	in	std_logic;
 		o_S	:	out std_logic;

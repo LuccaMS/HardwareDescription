@@ -1,5 +1,5 @@
 Fitter report for Ex2completo
-Tue May 17 09:52:55 2022
+Mon May 30 14:49:13 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue May 17 09:52:55 2022       ;
+; Fitter Status                      ; Successful - Mon May 30 14:49:13 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Ex2completo                                 ;
 ; Top-level Entity Name              ; Ex2completo                                 ;
@@ -149,12 +149,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.05        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   1.8%      ;
+;     Processors 2-4         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -1180,18 +1180,18 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/output_files/Ex2completo.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5543 megabytes
-    Info: Processing ended: Tue May 17 09:52:55 2022
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 5546 megabytes
+    Info: Processing ended: Mon May 30 14:49:13 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+

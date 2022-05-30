@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ex2completo
-Tue May 17 09:52:49 2022
+Mon May 30 14:49:04 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 17 09:52:49 2022       ;
+; Analysis & Synthesis Status        ; Successful - Mon May 30 14:49:04 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Ex2completo                                 ;
 ; Top-level Entity Name              ; Ex2completo                                 ;
@@ -262,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue May 17 09:52:41 2022
+    Info: Processing started: Mon May 30 14:48:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ex2completo -c Ex2completo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -272,8 +272,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file ex2completo.vhd
     Info (12022): Found design unit 1: Ex2completo-behavioral File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd Line: 18
     Info (12023): Found entity 1: Ex2completo File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file vhdl2.vhd
+    Info (12022): Found design unit 1: tb_ex2-behavioral File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Vhdl2.vhd Line: 10
+    Info (12023): Found entity 1: tb_ex2 File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Vhdl2.vhd Line: 6
 Info (12127): Elaborating entity "Ex2completo" for the top level hierarchy
-Info (12128): Elaborating entity "ex2" for hierarchy "ex2:UO1" File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd Line: 38
+Info (12128): Elaborating entity "ex2" for hierarchy "ex2:UO1" File: C:/Users/Saint/OneDrive/Documentos/Descricao_De_Hardaware/Lista1/Ex2completo/Ex2completo.vhd Line: 37
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -282,9 +285,9 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Tue May 17 09:52:49 2022
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Mon May 30 14:49:04 2022
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:19
 
 
