@@ -55,4 +55,5 @@ set_global_assignment -name VHDL_FILE ../Ex2completo/Ex2completo.vhd
 set_global_assignment -name VHDL_FILE ex3.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE test.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
