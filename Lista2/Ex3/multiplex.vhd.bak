@@ -1,0 +1,49 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+
+entity multiplex is
+	port(
+	i_A : in std_logic_vector(15 downto 0);
+	i_B : in std_logic_vector(15 downto 0);
+	i_C : in std_logic_vector(15 downto 0);
+	i_D : in std_logic_vector(15 downto 0);
+	i_E : in std_logic_vector(15 downto 0);
+	i_F : in std_logic_vector(15 downto 0);
+	i_G : in std_logic_vector(15 downto 0);
+	i_sel : in std_logic_vector(2 downto 0);
+	o_c : out std_logic_vector(15 downto 0)
+	);
+end multiplex;
+
+
+architecture behavioral of multiplex is
+begin
+
+ o_c <= i_A when i_sel = "000" else
+		  i_B when i_sel = "001" else
+		  i_C when i_sel = "010" else
+		  i_D when i_sel = "011" else
+		  i_E when i_sel = "100" else
+		  i_F when i_sel = "101" else
+		  i_G when i_sel = "110" else
+		  "0000000000000000";
+
+		   
+--process(i_sel)
+--begin
+--
+-- o_c <= i_A when i_sel = "000" else
+--		  i_B when i_sel = "001" else
+--		  i_C when i_sel = "010" else
+--		  i_D when i_sel = "011" else
+--		  i_E when i_sel = "100" else
+--		  i_F when i_sel = "101" else
+--		  i_G when i_sel = "110"
+--		  "0000000000000000";
+--
+--
+--
+--end process;
+end behavioral;
